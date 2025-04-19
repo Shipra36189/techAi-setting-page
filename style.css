@@ -1,0 +1,534 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+/* ======== sidebar =========== */
+
+.sidebar.collapsed .icon {
+  margin: 0;
+}
+
+.sidebar.collapsed .toggle-btn {
+  text-align: center;
+  padding: 10px;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar.collapsed .label , .sidebar.sidebar.collapsed .user-name , .sidebar.collapsed h3{
+  display: none;
+}
+
+.sidebar.collapsed a.active{
+  background: transparent;
+}
+
+.logo-menu{
+  display: flex;
+  gap: 150px;
+  font-size: 22px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: #F6F7FF;
+  color: #000;
+  width: 300px;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  transition: width 0.3s;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+
+.sidebar ul li a i{
+margin-right: 15px;
+}
+
+.sidebar ul li a.active{
+  background-color: #e8e5ff;
+  border-radius: 12px;
+}
+
+.sidebar.collapsed ~ .content{
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+.user-profile{
+  margin-top: 281px;
+  display: flex;
+  gap: 15px;
+}
+
+.user-profile .user-name input{
+  background: transparent;
+  border: none;
+  color: #525f7f;
+}
+
+.user-profile .user-img img{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+/* ======== sidebar =========== */
+
+.main-content{
+  margin-top: 20px;
+}
+.main-content2{
+  margin-left: 115px;
+  margin-top: -47px;
+  margin-bottom: 30px;
+}
+.main-content p{
+  margin: 30px 0;
+}
+
+.main-content p span{
+  padding: 0 20px;
+}
+
+.content {
+  margin-left: 300px;
+  padding: 0 120px;
+  flex-grow: 1;
+  transition: margin-left 0.3s;
+}
+
+
+
+.content .tab-content , .content .main-content{
+  padding: 0 20px;
+}
+
+.tab-content {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.contact-info{
+  background: #F3E5F5;
+  padding: 20px;
+}
+
+.profile-pic{
+  display: flex;
+  gap: 40px;
+}
+
+.profile-pic .upload{
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background-color: #6366F1;
+  color: #fff;
+}
+
+.profile-pic img{
+  height: 400px;
+  width: 500px;
+  margin-bottom: 15px;
+}
+
+.profile-heading h4{
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.title2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.section {
+  background-color: #EEF2FF;
+  padding: 16px;
+  border-radius: 8px;
+  /* display: flex; */
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-icon {
+  padding: 10px 20px;
+}
+.section-icon i {
+  color: #6366F1;
+}
+.section-content {
+  margin-left: 16px;
+}
+.section-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+.section-content p {
+  color: #6B7280;
+  margin: 4px 0 0;
+}
+.input-group {
+  margin-bottom: 24px;
+}
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 7px;
+}
+.input-group .input {
+  background-color: #F3F4F6;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.input input , .input textarea{
+  border: none;
+  background: transparent;
+  width: 100%;
+  color: #374151;
+  font-weight: 400;
+}
+
+.input-group .input span {
+  color: #374151;
+}
+.input-group .input i {
+  margin-left: auto;
+  color: #9CA3AF;
+}
+.preferences {
+  margin-bottom: 24px;
+}
+.preferences .preference {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.preferences .preference-icon {
+  background-color: #F6F7FF;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preferences .preference-icon i {
+  color: #6366F1;
+}
+.preferences .preference-content {
+  margin-left: 16px;
+  flex: 1;
+}
+.preferences .preference-content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.preferences .preference-content p {
+  color: #6B7280;
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+.preferences .preference-select {
+  color: #6B7280;
+  display: flex;
+  align-items: center;
+}
+.preferences .preference-select i {
+  margin-left: 4px;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.buttons button {
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 110px;
+}
+
+.del-btn button{
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+  margin-left: 13px;
+}
+
+.del-btn .delete{
+  background-color: #6366F1;
+  color: white;
+}
+.buttons .save {
+  background-color: #6366F1;
+  color: white;
+}
+.buttons .cancel {
+  background-color: #F3F4F6;
+  color: #6366f1;
+}
+
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before{
+  position: absolute;
+  content: "";
+  height: 12px;
+  left: 4px;
+  width: 12px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider{
+  background-color: #6366F1;
+}
+
+input:focus + .slider{
+box-shadow: 0 0 1px #6366F1;
+}
+
+input:checked + .slider::before{
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+.slider.round{
+  border-radius: 32px;
+}
+
+.slider.round::before{
+  border-radius: 50%;
+}
+
+.integration-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f7f6ff;
+  border-radius: 12px;
+}
+.icon i {
+  color: #644aff;
+}
+.details {
+  margin-left: 16px;
+}
+.details h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+.details p {
+  color: #6B7280;
+  margin: 0;
+}
+.edit-icon {
+  margin-left: auto;
+  color: #6B7280;
+}
+.webhook {
+  margin-bottom: 24px;
+}
+.webhook label {
+  display: block;
+  color: #374151;
+  margin-bottom: 8px;
+}
+.webhook-input {
+  display: flex;
+  align-items: center;
+  background-color: #F3F4F6;
+  border-radius: 8px;
+  padding: 8px;
+}
+.webhook-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+}
+.webhook-input i {
+  color: #6B7280;
+}
+.save-button {
+  width: 150px;
+  background-color: #6366F1;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.save-button:hover {
+  background-color: #634aff;
+}
+
+
+/* ======== responsive style =========== */
+@media (max-width: 1024px) {
+  .user-profile{
+    margin-top: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 250px;
+  }
+  
+  .user-profile{
+    margin-top: 220px;
+  }
+
+  .logo-menu{
+    gap: 100px;
+  }
+  .profile-pic img{
+    height: 250px;
+    width: 200px;
+  }
+
+  .content {
+      margin-left: 250px;
+      padding: 0 50px;
+  }
+
+  .sidebar ul li a:hover {
+    background: #e5d5f6;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+
+.content{
+  padding: 0 20px 0 20px;
+}
+
+.user-profile{
+  margin-top: 420px;
+}
+
+.profile-pic{
+  flex-direction: column;
+}
+
+.profile-pic img{
+  width: 150px;
+  height: 150px;
+}
+
+.profile-pic .upload{
+  margin-bottom: 10px;
+  margin-top: -85px;
+}
+
+}
+@media (max-width: 400px) {
+
+.user-profile{
+  margin-top: 790px;
+}
+
+}
+/* ======== responsive style =========== */

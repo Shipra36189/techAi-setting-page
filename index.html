@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="sidebar" id="sidebar">
+            <div class="logo-menu">
+            <h3>TechAi 
+                </h3>
+                <div class="toggle-btn" id="toggle-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </div></div>
+            <ul class="sidebar-menu">
+                <li class="menu-item"><a href="#" class="tab active" data-tab="tab1"><i class="fa-solid fa-user"></i><span class="label">Profile Settings</span></a></li>
+                <li class="menu-item"><a href="#" class="tab" data-tab="tab2"><i class="fa-solid fa-lock"></i><span class="label">Change Password</span></a></li>
+                <li class="menu-item"><a href="#" class="tab" data-tab="tab3"><i class="fa-solid fa-gear"></i><span class="label">Default Settings</span></a></li>
+                <li class="menu-item"><a href="#" class="tab" data-tab="tab4"><i class="fa-solid fa-bell"></i><span class="label">Notification Settings</span></a></li>
+                <li class="menu-item"><a href="#" class="tab" data-tab="tab5"><i class="fa-solid fa-shield-halved"></i><span class="label">Data and Privacy</span></a></li>
+                <li class="menu-item"><a href="#" class="tab" data-tab="tab6"><i class="fa-solid fa-laptop-code"></i><span class="label">Integration Settings</span></a></li>
+            </ul>
+
+            <div class="user-profile">
+                <div class="user-img">
+                    <img src="./image/girl.png" alt="">
+                </div>
+                <div class="user-name">
+                    <h5>Admin User</h5>
+                    <input class="" type="email" value="admin@techai.com"/>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="content" id="content">
+
+        <div class="main-content"><h2>Settings</h2>
+        <p>Settings <span>&gt;</span> </p>
+        </div>
+
+            <div id="tab1" class="tab-content active">
+                <div class="main-content2"><p>Profile Settings</p></div>
+                <h2 class="title">Personal Information</h2>
+
+            <div class="section">
+                <div class="section-icon">
+                <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="section-content">
+                    <h3>Profile Details</h3>
+                    <p>Manage your personal information and how it appears on your profile.</p>
+                </div>
+            </div>
+            
+            <div class="form">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <div class="input">
+        <input type="text" name="name" id="" value="Admin User" required />
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <div class="input">
+                        <input class="" readonly="" type="email" value="admin@techai.com"/>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Job Title</label>
+                    <div class="input">
+                        <input class="" readonly="" type="text" value="System Administrator"/>
+                    </div>
+                </div>
+
+
+                <div class="input-group">
+                    <label>Bio</label>
+                    <div class="input">
+                <textarea class="" readonly="" rows="8" column="20">Experienced system administrator with expertise in AI technologies and platform management.</textarea></div>
+                    </div>
+                </div>
+
+            <div class="profile-heading">
+                <h4>Profile Picture</h4>
+            </div>
+
+                    <div class="profile-pic">
+                        <img src="./image/girl.png" alt="">
+                        <div class="upload-btn">
+                        <button class="upload">Upload New Photo</button>
+                        </div>
+                    </div>
+
+                <h2 class="title2">Contact Information</h2>
+                <div class="section">
+                    <div class="section-icon">
+                        <i class="fas fa-address-card"></i>
+                    </div>
+                    <div class="section-content">
+                        <h3>Contact Details</h3>
+                        <p>Manage your contact information for account notifications and recovery.</p>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <div class="input">
+                        <input type="tel" id="phone" name="phone" value="+1 (555) 123-4567">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Alternative Email</label>
+                    <div class="input">
+                        <input class="" readonly="" type="email" value="admin.backup@techai.com"/>
+                        <i class="fas fa-at"></i>
+                    </div>
+                </div>
+
+                <h2 class="title2">Account Preferences</h2>
+                <div class="preferences">
+                    <div class="preference">
+                        <div class="preference-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="preference-content">
+                            <h3>Language</h3>
+                            <p>Choose your preferred language</p>
+                        </div>
+                        <div class="preference-select">
+                            Select <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="preference-content">
+                            <h3>Time Zone</h3>
+                            <p>Set your local time zone</p>
+                        </div>
+                        <div class="preference-select">
+                            Select <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="preference-content">
+                            <h3>Date Format</h3>
+                            <p>Choose how dates are displayed</p>
+                        </div>
+                        <div class="preference-select">
+                            Select <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="save">Save Changes</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+
+                <div id="tab2" class="tab-content">
+                <div class="main-content2"><p>Change Password</p></div>
+                <h2 class="title">Password Security</h2>
+            
+                <div class="section">
+                    <div class="section-icon">
+                    <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="section-content">
+                        <h3>Update Security</h3>
+                        <p>Change your password to maintain account security. We recommend using a strong, unique password.</p>
+                    </div>
+                </div>
+                
+                <div class="form">
+    
+                    <div class="input-group">
+                        <label>Current Password</label>
+                        <div class="input">
+            <input type="password" id="current-password" placeholder="Enter Your Current Password" required />
+            <i class="fa-solid fa-eye-slash"></i>
+        </div>
+                    </div>
+    
+                    <div class="input-group">
+                        <label>New Password</label>
+                        <div class="input">
+                            <input class="" id="new-password" type="password" placeholder="Enter New Password" required />
+            <i class="fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+    
+                    <div class="input-group">
+                        <label>Confirm New Password</label>
+                        <div class="input">
+                            <input class="" id="confirm-password" type="password" placeholder="Confirm New Password" required />
+            <i class="fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+    
+                    </div>
+            
+                    <div class="profile-heading">
+                        <h4>Password Requirements</h4>
+                    </div>
+
+<ul class="preferences">
+    <li class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="preference-content">Minimum 8 characters</div>
+    </li>
+
+    <li class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="preference-content">At least one uppercase letter</div>
+    </li>
+
+    <li class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="preference-content">At least one number</div>
+    </li>
+
+    <li class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="preference-content">At least one special character</div>
+    </li>
+
+</ul>
+
+<h2 class="title2">Security Options</h2>
+
+<div class="preferences">
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Language</h3>
+            <p>Choose your preferred language</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-stopwatch"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Time Zone</h3>
+            <p>Set your local time zone</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-bell"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Date Format</h3>
+            <p>Choose how dates are displayed</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="buttons">
+    <button class="save">Update Password</button>
+    <button class="cancel">Cancel</button>
+</div>
+
+            </div>
+
+                <div id="tab3" class="tab-content">
+                <div class="main-content2"><p>Default Settings</p></div>
+                    <h2 class="title">System Preferences</h2>
+            
+                <div class="section">
+                    <div class="section-icon">
+                    <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="section-content">
+                        <h3>Default Setttings</h3>
+                        <p>Configure system-wide defaults for your TechAl experience. These settings apply across all features.</p>
+                    </div>
+                </div>
+            
+<h2 class="title2">Display Settings</h2>
+
+<div class="preferences">
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-palette"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Theme</h3>
+            <p>Choose your preffered visual theme</p>
+        </div>
+        <div class="preference-select">
+            Select<i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-moon"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Dark Mode</h3>
+            <p>Enable dark mode for low-light environments</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fas fa-calendar-alt"></i><i class="fa-solid fa-grid-round-5"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Compact View</h3>
+            <p>Display more content with reduced spacing</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<h2 class="title2">Language & Region</h2>
+
+<div class="preferences">
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fas fa-globe"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Language</h3>
+            <p>Set your preferred language</p>
+        </div>
+        <div class="preference-select">
+            Select <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fas fa-clock"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Time Zone</h3>
+            <p>Set your local time zone</p>
+        </div>
+        <div class="preference-select">
+            Select <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Date Format</h3>
+            <p>Choose how dates are displayed</p>
+        </div>
+        <div class="preference-select">
+            Select <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+</div>
+
+<h2 class="title2">AI Processing Defaults</h2>
+
+<div class="preferences">
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-square-h"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Default Resolution</h3>
+            <p>Set default output resolution for AI processing</p>
+        </div>
+        <div class="preference-select">
+            Select <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-sliders"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Processing Quality</h3>
+            <p>Balance between speed and quality</p>
+        </div>
+        <div class="preference-select">
+            Select <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-floppy-disk"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Auto-Save Results</h3>
+            <p>Automatically save processed images</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<h2 class="title2">System Performance</h2>
+
+<div class="preferences">
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-gauge-simple-high"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Hardware Accelaration</h3>
+            <p>Use GPU for faster processing</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-brands fa-square-xing"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Background Processing</h3>
+            <p>Continue processing when app is minimized</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="buttons">
+    <button class="save">Save Changes</button>
+    <button class="cancel">Reset to Defaults</button>
+</div>
+
+            </div>
+            
+            <div id="tab4" class="tab-content">
+                <div class="main-content2"><p>Notification Settings</p></div>
+                <h2 class="title">Notification Preferences</h2>
+            
+                <div class="section">
+                    <div class="section-icon">
+                    <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="section-content">
+                        <h3>Notification Settings</h3>
+                        <p>Manage how and when you receive notifications from TechAl. Customize alerts for different activities and channels.</p>
+                    </div>
+                </div>
+            
+<h2 class="title2">Email Notifications</h2>
+
+<div class="preferences">
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-envelope-circle-check"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Processing Completed</h3>
+            <p>Receive email when AI processing is completed</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="preference-content">
+            <h3>New Features</h3>
+            <p>Updates about new TechAI capabilities</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-circle-user"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Account Updates</h3>
+            <p>Security and account-related notifications</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<h2 class="title2">In-App Notifications</h2>
+
+<div class="preferences">
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-hourglass-start"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Processing Status</h3>
+            <p>Show real-time processing updates</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <div class="preference-content">
+            <h3>System Alerts</h3>
+            <p>Important system messages and warnings</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-lightbulb"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Tips & Suggestions</h3>
+            <p>Helpful tips for better results</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<h2 class="title2">Mobile Push Notifications</h2>
+
+<div class="preferences">
+    <div class="preference">
+        <div class="preference-icon">
+        <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Enable Push Notifications</h3>
+            <p>MAster toggle for mobile finished</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+        <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Processing Completed</h3>
+            <p>Notify when AI task as finished</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-exclamation"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Critical Alerts</h3>
+            <p>Important security and system alerts</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<h2 class="title2">Notification Schedule</h2>
+
+<div class="preferences">
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-moon"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Quiet Hours</h3>
+            <p>Don't send notifications during selected hours</p>
+        </div>
+        <div class="preference-select">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-regular fa-clock"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Time Range</h3>
+            <p>Set your quiet hours period</p>
+        </div>
+        <div class="preference-select">
+            Select <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+    <div class="preference">
+        <div class="preference-icon">
+            <i class="fa-solid fa-stopwatch"></i>
+        </div>
+        <div class="preference-content">
+            <h3>Notifiaction Frequency</h3>
+            <p>How often to receive batched notifications</p>
+        </div>
+        <div class="preference-select">
+            Select <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+</div>
+
+<div class="buttons">
+    <button class="save">Save Changes</button>
+    <button class="cancel">Reset to Defaults</button>
+</div>
+
+            </div>
+
+            <div id="tab5" class="tab-content">
+                <div class="main-content2"><p>Data & Privacy</p></div>
+                <h2 class="title">Security & Privacy Settings</h2>
+            
+                <div class="section">
+                    <div class="section-icon">
+                    <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="section-content">
+                        <h3>Data Management</h3>
+                        <p>Control your data and download or clear information associated with your account. </p>
+                    </div>
+                </div>
+
+                <div class="preferences">
+                    <div class="preference">
+                        <div class="preference-icon">
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                        <div class="preference-content">
+                            <h3>Download All Data</h3>
+                            <p>Export all your account data as a ZIP file</p>
+                        </div>
+                        <div class="preference-select">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <!-- <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label> -->
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-icon">
+                            <i class="fa-solid fa-broom"></i>
+                        </div>
+                        <div class="preference-content">
+                            <h3>Clear Activity Logs</h3>
+                            <p>Remove all activity history from your account</p>
+                        </div>
+                        <div class="preference-select">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="section-content">
+                        <h3>Privacy Controls</h3>
+                        <p>Manage how your information is used and shared within the platform. </p>
+                    </div>
+                </div>
+
+                <div class="preferences">
+                    <div class="preference">
+                        <div class="preference-icon">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <div class="preference-content">
+                            <h3>Data Sharing</h3>
+                            <p>Control how your data is shared with third parties</p>
+                        </div>
+                        <div class="preference-select">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-icon">
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                        </div>
+                        <div class="preference-content">
+                            <h3>Analytics Tracking</h3>
+                            <p>Allow usage data collection for service improvement</p>
+                        </div>
+                        <div class="preference-select">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="preference">
+                        <div class="preference-icon">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="preference-content">
+                            <h3>Cookie Preferences</h3>
+                            <p>Manage cookie settings for your account</p>
+                        </div>
+                        <div class="preference-select">
+                            <i class="fa-solid fa-gear"></i>
+                            <!-- <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-icon">
+                    <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <div class="section-content">
+                        <h3>Account Deletion</h3>
+                        <p>Permanently remove your account and all associated data from our systems. </p>
+                    </div>
+                    <div class="del-btn">
+                        <button class="delete">Delete Account</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab6" class="tab-content">
+                <div class="main-content2"><p>Integration Settings</p></div>
+                <h2 class="title">Integration Settings</h2>
+            
+                <div class="integration-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="details">
+                        <h3>Email SMTP Setup</h3>
+                        <p>Configure email server settings</p>
+                    </div>
+                    <div class="edit-icon">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                </div>
+                <div class="webhook">
+                    <label>Webhook URL</label>
+                    <div class="webhook-input">
+                        <input type="text" value="https://api.techai.com/webhooks/incoming" readonly>
+                        <i class="fas fa-link"></i>
+                    </div>
+                </div>
+                <button class="save-button">Save Integrations</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
